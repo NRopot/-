@@ -1,0 +1,66 @@
+﻿@model WebApplication1.Orders
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Edit</h2>
+
+<h4>Orders</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="OrderId" />
+            <div class="form-group">
+                <label asp-for="CustomersId" class="control-label"></label>
+                <select asp-for="CustomersId" class="form-control" asp-items="ViewBag.CustomersId"></select>
+                <span asp-validation-for="CustomersId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="JobId" class="control-label"></label>
+                <input asp-for="JobId" class="form-control" />
+                <span asp-validation-for="JobId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BrigadeId" class="control-label"></label>
+                <select asp-for="BrigadeId" class="form-control" asp-items="ViewBag.BrigadeId"></select>
+                <span asp-validation-for="BrigadeId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cost" class="control-label"></label>
+                <input asp-for="Cost" class="form-control" />
+                <span asp-validation-for="Cost" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Brigadier" class="control-label"></label>
+                <input asp-for="Brigadier" class="form-control" />
+                <span asp-validation-for="Brigadier" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="PaymentNote" class="control-label"></label>
+                <input asp-for="PaymentNote" class="form-control" />
+                <span asp-validation-for="PaymentNote" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CompletionNote" class="control-label"></label>
+                <input asp-for="CompletionNote" class="form-control" />
+                <span asp-validation-for="CompletionNote" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MaterialsId" class="control-label"></label>
+                <select asp-for="MaterialsId" class="form-control" asp-items="ViewBag.MaterialsId"></select>
+                <span asp-validation-for="MaterialsId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

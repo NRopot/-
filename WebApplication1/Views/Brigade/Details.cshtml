@@ -1,0 +1,51 @@
+﻿@model WebApplication1.Brigade
+
+@{
+    Layout = "_Layout";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+
+<div>
+    <h4>Brigade</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.NameBrigade)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NameBrigade)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.FioBrigadier)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.FioBrigadier)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CompositionWorker)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CompositionWorker)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.JobId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.JobId)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.BrigadeId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
+</body>
+</html>

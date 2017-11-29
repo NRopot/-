@@ -1,0 +1,8 @@
+-p C:\Program Files\dotnet\dotnet.exe
+-pidFile C:\Users\Koleno\Desktop\WebApplication1\WebApplication1\bin\IISSupport\pidfile.txt
+-wd C:\Users\Koleno\Desktop\WebApplication1\WebApplication1
+-a exec "C:\Users\Koleno\Desktop\WebApplication1\WebApplication1\bin\Debug\netcoreapp2.0\WebApplication1.dll"
+-pipe 381f57ba-db48-4fc1-823e-3193833df5b9
+-pr WebApplication1
+-owningPid 4064
+-env ASPNETCORE_CONTENTROOT=C:\Users\Koleno\Desktop\WebApplication1\WebApplication1|ASPNETCORE_HOSTINGSTARTUPASSEMBLIES=Microsoft.AspNetCore.ApplicationInsights.HostingStartup|ASPNETCORE_ENVIRONMENT=Development|COMPLUS_ForceENC=1|
